@@ -1,0 +1,34 @@
+/* * Font - Google */
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-color: #f7f7f7;
+  --color: #222;
+  --heading-color: #333;
+}
+
+[data-scheme="dark"] {
+  --bg-color: #121418;
+  --color: #f2f2f2;
+  --heading-color: #87ceeb;
+}
+
+body {
+  font-size: var(--font-size-base);
+  background-color: var(--bg-color);
+  color: var(--color);
+  transition: 0.5s all cubic-bezier(0.77, 0, 0.175, 1);
+  -webkit-transition: 0.5s all cubic-bezier(0.77, 0, 0.175, 1);
+  -moz-transition: 0.5s all cubic-bezier(0.77, 0, 0.175, 1);
+  -ms-transition: 0.5s all cubic-bezier(0.77, 0, 0.175, 1);
+  -o-transition: 0.5s all cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+* {
+  font-family: "Urbanist", sans-serif;
+  color: var(--color);
+  background-color: var(--bg-color);
+}
